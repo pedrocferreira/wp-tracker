@@ -1,0 +1,15 @@
+<!-- leads/templates/leads/lead_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leads</title>
+</head>
+<body>
+    <h1>Leads</h1>
+    <ul>
+        {% for lead in leads %}
+            <li>{{ lead.name }} - {{ lead.email }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
